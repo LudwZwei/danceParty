@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(141, 141, 141);
+}
+
+canvas{
+    image-rendering: pixelated;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width:480px) {
+    canvas{
+        width: 100%;
+        height: 50%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+@media screen and (min-width:481px) and (max-width:1279px) {
+    canvas{
+        width: 50%;
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    #screen-window{
+        width: 100%;
+        height: 100%;
+    }
+    #input-window{
+        display: none;
+    }   
+}
